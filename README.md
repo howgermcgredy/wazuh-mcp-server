@@ -30,8 +30,14 @@ WAZUH_PASSWORD=your_password
 python3 server.py
 
 成果展示 (Demo & Results)
-1.實際運作測試 (MCP Inspector)
-下圖顯示 MCP Server 成功啟動，並透過 list_agents 工具從 Wazuh API 成功撈取即時監控數據：
+### 1. 實際運作測試 (MCP Inspector)
+下圖顯示 MCP Server 成功啟動，並透過 `list_agents` 工具從 Wazuh API 成功撈取即時監控數據：
 
-2. AI 整合分析情境模擬 (AI Analysis)
-本系統將抓取到的 Wazuh 原始數據 (Raw Data) 傳遞給 LLM (ChatGPT)，成功生成資安態勢報告。 下圖展示了完整的「數據獲取 -> AI 推論 -> 產出報告」流程：
+![MCP Inspector Result](inspector_result.png)
+
+### 2. AI 整合分析情境模擬 (AI Analysis)
+本系統將抓取到的 Wazuh 原始數據 (Raw Data) 傳遞給 LLM (ChatGPT)，成功生成資安態勢報告。
+下圖展示了完整的「數據獲取 -> AI 推論 -> 產出報告」流程：
+
+![AI Analysis Part 1](demo_chatgpt_analysis.png)
+![AI Analysis Part 2](demo_chatgpt_analysis2.png)
